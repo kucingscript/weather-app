@@ -6,7 +6,6 @@ const weatherDetails = document.querySelector(".weather__details");
 const error404 = document.querySelector(".not__found");
 
 const key = import.meta.env.VITE_KEY;
-console.log(key);
 
 const getData = () => {
   const city = inputCity.value;
