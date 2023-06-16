@@ -1,6 +1,6 @@
 # Weather App
 
-A program used to find out the weather based on the entered location
+Enhanced weather app with features to detect user location and nice animations
 
 ## Build with
 
