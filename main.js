@@ -117,7 +117,7 @@ const renderDesc = (data) => {
 
 const reversedGeoLocation = (lat, lon, key) => {
   fetch(
-    `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&&appid=${key}`
+    `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&&appid=${key}`
   )
     .then((response) => response.json())
     .then((data) => {
