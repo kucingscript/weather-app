@@ -109,7 +109,7 @@ const renderDesc = (data) => {
 
   const mediaQuery = window.matchMedia(`(max-width: 576px)`);
   if (mediaQuery.matches) {
-    container.style.height = "580px";
+    container.style.height = "570px";
   } else {
     container.style.height = "610px";
   }
@@ -121,7 +121,12 @@ const reversedGeoLocation = (lat, lon, key) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      inputCity.value = `${data[0].name}, ${data[0].state} - ${data[0].country}`;
+      const mediaQuery = window.matchMedia(`(max-width: 576px)`);
+      if (!mediaQuery.matches) {
+        inputCity.value = `${data[0].name}, ${data[0].state} - ${data[0].country}`;
+      } else {
+        inputCity.value = `${data[0].name} - ${data[0].country}`;
+      }
     });
 };
 
