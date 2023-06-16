@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-  position: absolute;
   width: 490px;
   height: 105px;
   background-color: #fff;
